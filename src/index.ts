@@ -65,6 +65,7 @@ function entity(name: string, partitionKey: EntityType, props?: EntityProps) {
 }
 
 async function main() {
+  console.log('ola');
   const ya = yargs;
   ya.recommendCommands();
   ya.strictCommands();
