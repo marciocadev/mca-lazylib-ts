@@ -3,6 +3,7 @@ const project = new typescript.TypeScriptProject({
   defaultReleaseBranch: 'main',
   name: 'mca-lazylib-ts',
   projenrcTs: true,
+  repository: 'https://github.com/marciocadev/mca-lazylib-ts.git',
 
   release: true,
   tsconfig: {
