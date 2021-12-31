@@ -4,6 +4,9 @@
     "type": "git",
     "url": "https://github.com/marciocadev/mca-lazylib-ts.git"
   },
+  "bin": {
+    "mca-lazylib-ts": "mca-lazylib-ts.js"
+  },
   "scripts": {
     "build": "npx projen build",
     "bump": "npx projen bump",
