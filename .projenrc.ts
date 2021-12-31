@@ -13,7 +13,7 @@ const project = new typescript.TypeScriptProject({
   },
 
   bin: {
-    'mca-lazylib-ts': 'index.js',
+    'mca-lazylib-ts': 'lib/index.js',
   },
 
   releaseToNpm: true,

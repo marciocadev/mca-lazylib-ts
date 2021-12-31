@@ -1,3 +1,4 @@
+import { exit } from 'process';
 import { FileBase, SourceCode, typescript } from 'projen';
 import * as yargs from 'yargs';
 
@@ -66,6 +67,7 @@ function entity(name: string, partitionKey: EntityType, props?: EntityProps) {
 
 async function main() {
   console.log('ola');
+  process.exit();
   const ya = yargs;
   ya.recommendCommands();
   ya.strictCommands();
