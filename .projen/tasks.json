@@ -214,7 +214,7 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit json-schema npm-check-updates standard-version ts-jest ts-node typescript"
+          "exec": "yarn upgrade @types/conventional-changelog-config-spec @types/fs-extra @types/glob @types/ini @types/jest @types/node @types/semver @types/yargs @typescript-eslint/eslint-plugin @typescript-eslint/parser all-contributors-cli eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit json-schema markmac npm-check-updates standard-version ts-jest ts-node typescript @iarna/toml case chalk conventional-changelog-config-spec fs-extra glob ini semver shx xmlbuilder2 yaml yargs"
         },
         {
           "exec": "npx projen"
@@ -247,7 +247,7 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade projen"
+          "exec": "yarn upgrade projen projen"
         },
         {
           "exec": "npx projen"
