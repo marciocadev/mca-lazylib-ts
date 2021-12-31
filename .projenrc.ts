@@ -12,6 +12,8 @@ const project = new typescript.TypeScriptProject({
     },
   },
 
+  releaseToNpm: true,
+
   deps: ['projen'],
 
   bundledDeps: [
