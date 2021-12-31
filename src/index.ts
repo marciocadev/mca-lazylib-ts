@@ -1,17 +1,13 @@
-// import boxen, { Options } from 'boxen';
-// import chalk from 'chalk';
-import { cdk, FileBase, SourceCode } from 'projen';
+import { FileBase, SourceCode, typescript } from 'projen';
 import * as yargs from 'yargs';
-// import { help } from 'yargs';
-// import { hideBin } from 'yargs/helpers';
 
-const project = new cdk.JsiiProject({
-  author: 'Marcio Cruz de Almeida',
-  authorAddress: 'marciocadev@gmail.com',
+const project = new typescript.TypeScriptProject({
+  authorName: 'Marcio Cruz de Almeida',
+  authorEmail: 'marciocadev@gmail.com',
   defaultReleaseBranch: 'main',
   name: 'mca-lazylib',
   projenrcTs: true,
-  repositoryUrl: 'https://github.com/marciocadev/mca-lazylib.git',
+  repository: 'https://github.com/marciocadev/mca-lazylib.git',
 });
 
 interface EntityType {
@@ -74,7 +70,7 @@ async function main() {
   ya.strictCommands();
   ya.showHelpOnFail(false);
   ya.wrap(yargs.terminalWidth());
-  ya.option('name', { type: 'string', default: true, desc: 'Name of the model' });
+  ya.option('n', { type: 'string', default: true, desc: 'Name of the model' });
   ya.completion();
   ya.help();
 
@@ -82,7 +78,9 @@ async function main() {
   ya.option('version', { type: 'boolean', description: 'Show version number', global: false });
 
   const args = await ya.argv;
-  entity(args.name as string, { key: 'username', type: 'string' });
+  console.log(args.n);
+  entity(args.n as string, { key: 'username', type: 'string' });
+  project.synth();
 }
 
 main().catch(e => {

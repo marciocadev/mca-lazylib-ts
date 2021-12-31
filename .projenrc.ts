@@ -12,6 +12,10 @@ const project = new typescript.TypeScriptProject({
     },
   },
 
+  bin: {
+    'mca-lazylib-ts': 'mca-lazylib-ts.js',
+  },
+
   releaseToNpm: true,
 
   deps: ['projen'],
