@@ -6,6 +6,7 @@ const project = new typescript.TypeScriptProject({
   repository: 'https://github.com/marciocadev/mca-lazylib-ts.git',
 
   release: true,
+  eslint: true,
   tsconfig: {
     compilerOptions: {
       lib: ['dom', 'es2019'],
