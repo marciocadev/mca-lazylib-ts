@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import * as fs from 'fs';
 import { FileBase, SourceCode, Project } from 'projen';
 import * as yargs from 'yargs';
